@@ -16,14 +16,17 @@ int main(void)
 	{
 		for (j = i; j <= 9; j++)
 		{
-			if (commaFlag)
+			if (i != j)
 			{
-				putchar(',');
-				putchar(' ');
+				if (commaFlag)
+				{
+					putchar(',');
+					putchar(' ');
+				}
+				commaFlag = 1;
+				putchar('0' + i);
+				putchar('0' + j);
 			}
-			commaFlag = 1;
-			putchar('0' + i);
-			putchar('0' + j);
 		}
 	}
 
