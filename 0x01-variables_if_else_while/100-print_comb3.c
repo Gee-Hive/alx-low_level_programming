@@ -10,18 +10,20 @@
 int main(void)
 {
 	int i, j;
+	int commaFlag = 0;
 
 	for (i = 0; i <= 9; i++)
 	{
 		for (j = i; j <= 9; j++)
 		{
-			if (i == j)
+			if (commaFlag)
 			{
-				putchar(i + '0');
-				putchar(j + '0');
 				putchar(',');
 				putchar(' ');
 			}
+			commaFlag = 1;
+			putchar('0' + i);
+			putchar('0' + j);
 		}
 	}
 
