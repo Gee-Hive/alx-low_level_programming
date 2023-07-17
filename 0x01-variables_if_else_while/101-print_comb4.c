@@ -3,37 +3,30 @@
 /**
  * main - Entry Point
  *
- *
  * Return: Always 0 (success)
  *
  */
 
 int main(void)
 {
-	int x, y, z;
+	int a, b, c;
 	int commaFlag = 0;
 
-	for (x = 0; x <= 2; x++)
+	for (a = 0; a <= 9; a++)
 	{
-		for (y = 0; y <= 2; y++)
+		for (b = a + 1; b <= 9; b++)
 		{
-			if (x != y)
+			for (c = b + 1; c <= 9; c++)
 			{
-				for (z = 0; z <= 2; z++)
+				if (commaFlag)
 				{
-					if (z != x && z != y)
-					{
-						if (commaFlag)
-						{
-							putchar(',');
-							putchar(' ');
-						}
-						commaFlag = 1;
-						putchar('0' + x);
-						putchar('0' + y);
-						putchar('0' + z);
-					}
+					putchar(',');
+					putchar(' ');
 				}
+				commaFlag = 1;
+				putchar('0' + a);
+				putchar('0' + b);
+				putchar('0' + c);
 			}
 		}
 	}
