@@ -19,17 +19,17 @@ int main(void)
 			{
 				putchar('0');
 			}
-			putchar('0' + x);
+			 printf("%d", x);
 
 			if (y < 10)
 			{
 				putchar('0');
 			}
-			putchar('0' + y);
+			printf("%d", y);
 
 			if (x != 98 || y != 99)
 			{
-				putchar(',');
+				printf(",");
 			}
 		}
 	}
