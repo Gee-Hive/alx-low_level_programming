@@ -9,32 +9,32 @@
 
 int main(void)
 {
-	int x, y;
+	int i, j;
 
-	for (x = 0; x <= 99; x++)
+	for (i = 0; i <= 99; i++)
 	{
-		for (y = x + 1; y <= 99; y++)
+		for (j = i + 1; j <= 99; j++)
 		{
-			if (x < 10)
+			if (i != 0)
+			{
+				putchar('0' + i / 10);
+				putchar('0' + i % 10);
+			}
+			else
 			{
 				putchar('0');
-			}
-			 printf("%d", x);
-
-			if (y < 10)
-			{
 				putchar('0');
 			}
-			printf("%d", y);
-
-			if (x != 98 || y != 99)
+			putchar(' ');
+			putchar('0' + j / 10);
+			putchar('0' + j % 10);
+			if (i != 98 || j != 99)
 			{
-				printf(",");
+				putchar(',');
+				putchar(' ');
 			}
 		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
