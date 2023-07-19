@@ -4,7 +4,8 @@
 /**
  * add - adds two integer and returns the result
  *
- * @num: is the parameter or input passed in
+ * @a: is the parameter or input passed in
+ * @b: is the second parameter or input passed in
  * Return: int
  */
 
