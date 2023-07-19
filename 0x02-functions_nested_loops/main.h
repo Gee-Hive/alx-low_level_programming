@@ -12,5 +12,6 @@ int print_last_digit(int num);
 void jack_bauer(void);
 int add(int a, int b);
 void print_to_98(int n);
+void printFibonacciNumbers(int digit);
 
 #endif
