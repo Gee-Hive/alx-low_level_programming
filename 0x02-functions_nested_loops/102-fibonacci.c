@@ -9,16 +9,16 @@
 
 void printFibonacciNumbers(int digit)
 {
-	unsigned long long int firstNumber = 1;
-	unsigned long long int secondNumber = 2;
-	unsigned long long int next;
+	unsigned  int firstNumber = 1;
+	unsigned  int secondNumber = 2;
+	unsigned  int next;
 	int i;
 
-	printf("%llu", firstNumber);
+	printf("%u", firstNumber);
 
 	for (i = 3; i <= digit; i++)
 	{
-		printf(", %llu", secondNumber);
+		printf(", %u", secondNumber);
 
 		next = firstNumber + secondNumber;
 		firstNumber = secondNumber;
