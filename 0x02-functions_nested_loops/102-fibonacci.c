@@ -36,7 +36,7 @@ void printFibonacciNumbers(int digit)
 
 int main(void)
 {
-	printFibonacciNumbers(50);
+	printFibonacciNumbers(49);
 
 	return (0);
 }
