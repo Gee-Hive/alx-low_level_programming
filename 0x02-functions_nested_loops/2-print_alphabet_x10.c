@@ -16,7 +16,7 @@ void print_alphabet_x10(void)
 		while (times < 11)
 		{
 			_putchar(letters);
-			times++
+			times++;
 		}
 	}
 	
