@@ -18,6 +18,11 @@ void print_to_98(int n)
 			printf(", ");
 			print_to_98(n + 1);
 		}
+		else if (n > 98)
+		{
+			print(", ");
+			print_to_98(n - 1);
+		}
 		else
 		{
 			printf("\n");
