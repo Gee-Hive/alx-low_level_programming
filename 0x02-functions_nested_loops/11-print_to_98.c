@@ -16,6 +16,7 @@ void print_to_98(int n)
 		if (n < 98)
 		{
 			printf(",");
+			_putchar(' ');
 			print_to_98(n + 1);
 		}
 	}
