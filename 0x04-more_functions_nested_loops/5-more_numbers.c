@@ -20,6 +20,5 @@ void more_numbers(void)
 		printf("\n");
 		j++;
 	}
-	_putchar('\n');
 }
 
