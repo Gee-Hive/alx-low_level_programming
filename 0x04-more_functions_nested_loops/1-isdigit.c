@@ -3,13 +3,13 @@
 
 /**
  * _isdigit - checks for a digit passed or not
- * @c: is the input or parameter passed in
+ * @a: is the input or parameter passed in
  * Return: 0
  */
 
-int _isdigit(int c)
+int _isdigit(int a)
 {
-	if (c >= 0 && c <= 9)
+	if (a >= '0' && a <= '9')
 	{
 		return (1);
 	}
