@@ -2,19 +2,19 @@
 #include "main.h"
 
 /**
- * puts2 - prints every other character of a string, starting with the first character
+ * puts2 - prints every other character of a string
  * @str: input params
  */
 
 void puts2(char *str)
 {
-	int i = 0;
+	const char *ptr = str;
 
-	while (str[i] != '\0')
+	while (*ptr != '\0')
 	{
-		_putchar(str[i]);
+		_putchar(*ptr);
 
-		i += 2;
+		ptr += 2;
 	}
 	_putchar('\n');
 }
