@@ -19,7 +19,7 @@ char *_strpbrk(char *s, char *accept)
 		{
 			if (*s == *p)
 			{
-				return (s); /* Found a matching byte, return the pointer to it */
+				return (s);
 			}
 			p++;
 		}
