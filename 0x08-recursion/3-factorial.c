@@ -4,6 +4,7 @@
 /**
  * factorial - returns the factorial of a given number
  * @n: is the input param
+ * Return: int
  */
 
 int factorial(int n)
