@@ -19,33 +19,35 @@ dog_t *new_dog(char *name, float age, char *owner)
 	ptr = malloc(sizeof(dog_t));
 	if (ptr == NULL)
 		return ('\0');
-	/*implement name action */
+	while (name[i] != '\0')
+	{
+		i++;
+	}
 	ptr->name = malloc(sizeof(char) * (i + 1));
 	if (ptr->name == NULL)
 	{
 		free(ptr);
 		return ('\0');
 	}
-	for (; k <= i; k++)
+	for (k = 0; k <= i; k++)
 	{
 		ptr->name[k] = name[k];
 	}
-	/*implement owner action*/
-	ptr->owner = malloc(sizeof(char) * (i + 1));
+	while (owner[j] != '\0')
+	{
+		j++;
+	}
+	ptr->owner = malloc(sizeof(char) * (j + 1));
 	if (ptr->owner == NULL)
 	{
 		free(ptr->name);/*Free the previously allocated memory*/
 		free(ptr);
 		return ('\0');
 	}
-	for (; k <= j; k++)
+	for (k = 0; k <= j; k++)
 	{
 		ptr->owner[k] = owner[k];
 	}
-
-	/*implement age action*/
 	ptr->age = age;
-
-	/*return pointer*/
 	return (ptr);
 }
