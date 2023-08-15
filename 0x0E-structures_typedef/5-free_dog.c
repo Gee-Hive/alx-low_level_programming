@@ -15,7 +15,6 @@ void free_dog(dog_t *d)
 		/*Free memory for name and owner*/
 		free(d->name);
 		free(d->owner);
-		
 		free(d);/*Free memory for the dog structure*/
 	}
 }
