@@ -23,19 +23,19 @@ void print_all(const char * const format, ...)
 			switch (format[i])
 			{
 				case 'c':
-					printf("%c%s", va_arg(lists, int), separator);
+					printf("%s%c", separator, va_arg(lists, int));
 					break;
 				case 'i':
-					printf("%d%s", va_arg(lists, int), separator);
+					printf("%s%d", separator, va_arg(lists, int));
 					break;
 				case 'f':
-					printf("%f%s", va_arg(lists, double), separator);
+					printf("%s%f", separator, va_arg(lists, double));
 					break;
 				case 's':
 					str = va_arg(lists, char *);
 					if (str == NULL)
 						str = "(nil)";
-					printf("%s%s", str, separator);
+					printf("%s%s", separator, str);
 					break;
 				default:
 					i++;
