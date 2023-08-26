@@ -9,13 +9,12 @@
 
 void free_list(list_t *head)
 {
-	if (head != NULL)
+	while (head != NULL)
 	{
-		if (head->next != NULL)
-		{
-			free_list(head->next); /*recursion*/
-		}
-		free(head->str);
-		free(head);
+		list_t *tp = head;
+
+		head = head->next;
+		free(tp->str);
+		free(tp);
 	}
 }
